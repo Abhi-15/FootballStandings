@@ -1,0 +1,5 @@
+export const USER_LOGIN = 'USER_LOGIN'; 
+export const USER_LOGOUT = 'USER_LOGOUT';
+export const SET_USERNAME = 'SET_USERNAME';
+export const SET_PASSWORD = 'SET_PASSWORD';
+export const SET_FAVORITE_LEAGUES = 'SET_FAVORITE_LEAGUES';

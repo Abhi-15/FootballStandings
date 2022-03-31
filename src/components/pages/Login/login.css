@@ -1,0 +1,30 @@
+.login{
+	width: 30%;
+	margin: auto;
+	padding: 12.5rem 0 0 0;
+}
+
+@media only screen and (max-width: 700px){
+	.submitButton{
+		width: 50%;
+	}
+
+	.login{
+		width: 50%;
+	}
+
+	label, input, button{
+		font-size: 1.3rem;
+	}
+}
+
+@media only screen and (max-width: 550px){
+
+	.login{
+		width: 60%;
+	}
+
+	label, input, button{
+		font-size: 1.1rem;
+	}
+}

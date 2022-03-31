@@ -1,0 +1,24 @@
+.flexBox{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.widthFull{
+	width: 100%;
+}
+
+.leagueNames{
+	width: calc(80% - 2rem);
+}
+
+.leagueLogos{
+	display: block;
+	width: 5rem;
+	height: 5rem;
+	margin: 0 auto;
+}
+
+.leagueHeading{
+	height: 70px;
+}
+

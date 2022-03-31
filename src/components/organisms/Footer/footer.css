@@ -1,0 +1,23 @@
+.footer{
+	position: absolute;
+  	bottom: 0;
+	width: calc(100% - 32rem);
+	background-color: black;
+	color: #fff;
+	padding: 0rem 16rem;
+	display: flex;
+	justify-content: center;
+	letter-spacing: 1px;
+	line-height: 1.5rem;
+	font-size: 1.1rem;
+    font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serif;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 710px){
+	.footer{
+		width: calc(100% - 4rem);
+		padding: 0 2rem;
+	}
+
+}

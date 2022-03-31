@@ -1,0 +1,171 @@
+body{
+	margin: 0;
+}
+
+.content{
+	padding: 7rem 17rem 4rem 17rem;
+}
+
+.flexBox{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.box{
+	padding-bottom: 2rem;
+	width: calc(100% / 4 - 12px);
+	border-radius: 10%;
+	margin: 0 1rem 1rem 0;
+	box-shadow: 0 0.5rem 0.5rem rgb(0 0 24 / 10%);
+	background-color: #f4f5f6;
+    font-family: 'SF Pro Display','-apple-system','BlinkMacSystemFont',
+    'San Francisco','Helvetica Neue','Helvetica','Ubuntu','Roboto','Noto','Segoe UI','Arial',sans-serif;
+}
+
+.box:nth-child(4n){
+	margin-right: 0;
+}
+
+.box:hover{
+	cursor: pointer;
+	background-color: #e9ebed;
+}
+
+.widthFull{
+	width: 100%;
+}
+
+.leagueNames{
+	width: calc(80% - 2rem);
+}
+
+.inputClass{
+	padding: 1rem 1rem 1rem 0;
+	width: calc(20% - 1rem);
+}
+
+.star {
+	display: block;
+	padding: 0.1rem;
+}
+
+.leagueLogos{
+	display: block;
+	width: 5rem;
+	height: 5rem;
+	margin: 0 auto;
+}
+
+.leagueHeading{
+	height: 70px;
+}
+
+@media only screen and (max-width: 1377px){
+	.content{
+		padding: 7rem 6rem 4rem 6rem;
+	}
+	.box{
+		font-size: 1.1rem;
+	}
+} 
+
+@media only screen and (max-width: 1272px){
+	.box{
+		width: calc(100% / 3 - 1rem);
+		margin: 0 1.5rem 1rem 0;
+	}
+
+	.box:nth-child(4n){
+		margin-right: 1.5rem;
+	}
+
+	.box:nth-child(3n){
+		margin-right: 0;
+	}
+
+}
+
+@media only screen and (max-width: 950px){
+	.content{
+		font-size: 0.8rem;
+	}
+	.box{
+		font-size: 0.9rem;
+	}
+}
+
+@media only screen and (max-width: 868px){
+	.content{
+		padding: 7rem 4rem 4rem 4rem;
+	}
+	.box{
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (max-width: 710px){
+	.content{
+		padding: 7rem 3.5rem 4rem 3.5rem;
+	}
+	.box{
+		font-size: 0.9rem;
+	}
+}
+
+@media only screen and (max-width: 644px){
+	.content{
+		padding: 7rem 2rem 4rem 2rem;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	.box{
+		width: calc(100% / 2 - 1rem);
+		margin: 0 2rem 1rem 0;
+		font-size: 0.9rem;
+	}
+
+	.box:nth-child(4n){
+		margin-right: 2rem;
+	}
+
+	.box:nth-child(3n){
+		margin-right: 2rem;
+	}
+
+	.box:nth-child(2n){
+		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width: 470px){
+	.content{
+		padding: 7rem 0.9rem 4rem 0.9rem;
+	}
+}
+
+@media only screen and (max-width: 450px){
+	.box{
+		font-size: 0.8rem;
+	}
+}
+
+@media only screen and (max-width: 350px){
+	.box{
+		font-size: 1.1rem;
+	}
+
+	.box{
+		width: 100%;
+		margin: 0 0 1rem 0;
+		font-size: 0.9rem;
+	}
+
+	.box:nth-child(4n){
+		margin-right: 0;
+	}
+
+	.box:nth-child(3n){
+		margin-right: 0;
+	}
+}
