@@ -1,7 +1,7 @@
 import React from "react";
 import LeagueList from "../../molecules/LeagueList";
 import {useFetchData} from "../../customHooks/useFetchData";
-import Loader from '../../Loader';
+import Loader from '../../molecules/Loader';
 import {setLeagues, getLeagues} from '../../../redux';
 import {connect} from 'react-redux';
 

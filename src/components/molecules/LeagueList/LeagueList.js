@@ -2,7 +2,7 @@ import {useState, React} from "react";
 import {createSelector} from 'reselect';
 import {Link} from 'react-router-dom';
 import {Loggedin, userAndFavoriteLeagues, setLeagues} from "../../App";
-import Modal from '../../Modal';
+import Modal from '../Modal';
 import TypoGraphy from '../../atoms/TypoGraphy';
 import {connect} from 'react-redux';
 import {userLogin, setUserName, setFavoriteLeagues, setLeagueId} from '../../../redux';

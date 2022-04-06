@@ -8,7 +8,7 @@ import DropDown from "../../molecules/DropDown";
 import {dropDownLeagueMenu, dropDownSeasonMenu} from "../../helper/DropDownData";
 import {setLeagueId, setSeason, getSeason, getLeagueId} from '../../../redux';
 
-import Loader from "../../Loader";
+import Loader from "../../molecules/Loader";
 import styles from './leagueStanding.css'
 
 import {getTableData} from "../../helper/getTableData";

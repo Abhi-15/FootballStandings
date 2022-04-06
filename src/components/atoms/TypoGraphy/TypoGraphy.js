@@ -1,5 +1,5 @@
 import React from 'react';
-import variantMapping from '../variantMapping';
+import variantMapping from '../../helper/variantMapping';
 
 function TypoGraphy(props){
 

@@ -1,6 +1,7 @@
 import {useState, React} from "react";
 import ReactDom from 'react-dom';
-import TypoGraphy from './atoms/TypoGraphy';
+import TypoGraphy from '../../atoms/TypoGraphy';
+import styles from './modal.css';
 
 function Modal(props) {
     

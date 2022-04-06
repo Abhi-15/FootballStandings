@@ -1,7 +1,7 @@
 import {React, useState} from "react";
 import SubmitForm from "../../helper/SubmitForm";
 import {useNavigate} from "react-router-dom";
-import Modal from '../../Modal';
+import Modal from '../../molecules/Modal';
 import styles from './signup.css';
 import TypoGraphy from '../../atoms/TypoGraphy';
 

@@ -7,14 +7,14 @@ import styles from './login.css';
 import {connect} from 'react-redux';
 import {userLogin, setUserName, setPassword, getLoginStatus, getUsername, getPassword, getFavoriteLeagues} from '../../../redux';
 
-import Modal from '../../Modal';
+import Modal from '../../molecules/Modal';
 
 const portal = document.getElementById('portal');
 
 function Login(props) {
 
-    const username = props.username;
-    const password = props.password;
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
     const navigate = useNavigate();
     const [modalShow, setModalShow] = useState(false);
 
@@ -35,19 +35,20 @@ function Login(props) {
                 variant='label'
                 text='Email: '
             />
-            <input value={username} onChange={(event) => {props.setUserName(event.target.value)}}/>
+            <input value={username} onChange={(event) => {setUsername(event.target.value)}}/>
 
             <TypoGraphy 
                 variant='label'
                 text='Password: '
             />
-            <input value={password} onChange={(event) => {props.setPassword(event.target.value)}}/>
+            <input value={password} onChange={(event) => {setPassword(event.target.value)}}/>
 
             <div className="submitButton">
                 <TypoGraphy 
                     text='submit'
                     variant='button'
-                    onClick={() => CheckUserDetails(username, password) ? (props.userLogin(true), navigate('/')) : changeModalState(true)}
+                    onClick={() => CheckUserDetails(username, password) ? (props.userLogin(true), props.setUserName(username), 
+                                   props.setPassword(password), navigate('/')) : changeModalState(true)}
                 />              
             </div>
         </div>
